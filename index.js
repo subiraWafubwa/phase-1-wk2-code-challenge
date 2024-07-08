@@ -1,35 +1,25 @@
 const shoppingList = [];
 const shirts = [
     {
-        name: 'Zara',
-        description: 'Trendy and fashionable shirts with contemporary designs',
-        price: 5000
+        name: 'Laptop',
+        description: 'HP Pavillion',
+        price: 35000
     },
     {
-        name: 'Levi\'s',
-        description: 'Casual denim shirts that bring a rugged and stylish look',
+        name: 'Fridge',
+        description: 'Samsung Extra Large',
         price: 3800
     },
     {
-        name: 'Tommy Hilfiger',
-        description: 'Iconic shirts with a preppy and sophisticated style',
+        name: 'Bread',
+        description: 'Superloaf 150g',
         price: 6500
     },
     {
-        name: 'Calvin Klein',
-        description: 'Sleek and modern shirts ideal for both formal and casual wear',
+        name: 'Perfume',
+        description: 'Rasasi Emotion',
         price: 7000
     },
-    {
-        name: 'Polo Ralph Lauren',
-        description: 'Classic and versatile shirts with the iconic Polo logo',
-        price: 8500
-    },
-    {
-        name: 'Van Huesen',
-        description: 'Affordable and stylish formal shirts for everyday office wear',
-        price: 3200
-    }
 ];
 
 // Adding card for every shirt in my inventory
