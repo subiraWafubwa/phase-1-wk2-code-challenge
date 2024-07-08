@@ -1,0 +1,185 @@
+/*This is the card managing each shirt item*/
+.card {
+    position: relative;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 17px 25px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(156, 156, 156, 0.254);
+    background-color: #fff;
+    display: inline-block;
+}
+
+.card h3 {
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 5px 10px;
+    text-align: center;
+}
+
+.card .price {
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0px;
+}
+
+.card .card-btn{
+    width: 100%;
+    margin: 10px 0px;
+    height: 50px;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.purchase-background {
+    position: fixed; /* Make it cover the whole screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.21); /* Using rgba for semi-transparency */
+    z-index: 2; /* Ensure it's on top of other content */
+}
+
+.purchase-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    z-index: 4;
+    /* Add other styles as needed */
+}
+
+.purchase-dialog #purchase-dialog-text{
+    position: relative;
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.add-item-background, .remove-item-background{
+    position: fixed; /* Make it cover the whole screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.21); /* Using rgba for semi-transparency */
+    z-index: 2;
+}
+
+.add-item-dialog, .remove-item-dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: white;
+    width: 500px;
+    border-radius: 30px;
+    z-index: 4;
+}
+
+.add-item-dialog{
+    height: 500px;
+}
+
+.remove-item-dialog{
+    height: 250px;
+}
+
+.remove-dialog{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    z-index: 6;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: rgb(0, 0, 0);
+}
+
+.remove-dialog .cancel{
+    position: absolute;
+    margin: 7px;
+    height: 16px;
+    width: 16px;
+    z-index: 8;
+}
+
+#add-input-name {
+    top: 20%;
+    height: 60px;
+}
+
+#add-input-description {
+    top: 40%;
+    height: auto;
+    min-height: 100px;
+}
+
+#add-input-price {
+    top: 60%;
+    height: 60px;
+}
+
+#add-input-name,
+#add-input-description, 
+#add-input-price,
+#remove-input-name{
+    position: absolute;
+    left: 50%;
+    transform: translate(-16.70%, -50%);
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding: 20px;
+    width: 90%;
+    left: 20%;
+    display: block;
+    border: none;
+    background-color: #d2d2d2;
+    box-sizing: border-box;
+}
+
+#remove-input-name{
+    top: 35%;
+}
+
+
+#add-input-submit, #remove-input-submit{
+    position: absolute;
+    left: 20%;
+    transform: translate(-16.70%, -50%);
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    width: 90%;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    text-align: center;
+    background-color: #000000;
+    box-sizing: border-box;
+}
+
+#add-input-submit{ 
+    top: 75%;
+}
+
+#remove-input-submit{
+    top: 60%;
+}
